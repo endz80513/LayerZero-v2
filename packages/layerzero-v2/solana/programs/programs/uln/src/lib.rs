@@ -108,10 +108,6 @@ pub mod uln {
         Verify::apply(&mut ctx, &params)
     }
 
-    pub fn close_verify(_ctx: Context<CloseVerify>, _params: CloseVerifyParams) -> Result<()> {
-        CloseVerify::apply()
-    }
-
     pub fn commit_verification(
         mut ctx: Context<CommitVerification>,
         params: CommitVerificationParams,
